@@ -1,17 +1,18 @@
-.terraform/
+# Generated provider cache, Terraform state and plans
+**/.terraform/
 *.tfstate
 *.tfstate.*
-*.tfvars
-!terraform.tfvars.example
+*.tfplan
 crash.log
 crash.*.log
-*.tfplan
-*.tfplan.*
-*.auto.tfvars
-*.auto.tfvars.json
+terraform.tfstate.lock.info
+
+# Real deployment inputs; example files are allowed
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Credentials and operating system files
 .env
+.env.*
 .DS_Store
-# Additional sensitive/derived files
-*.tfplan
-*.tfplan.*
-crash.log

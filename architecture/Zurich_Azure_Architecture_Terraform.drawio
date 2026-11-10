@@ -1,0 +1,456 @@
+<mxfile host="65bd71144e">
+    <diagram name="ZCAM Azure Architecture - Terraform v2" id="zcam-azure-tfv2">
+        <mxGraphModel dx="1689" dy="1579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1460" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="label1" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=15;fontFamily=Arial;fontColor=#2672B8;fontStyle=1;spacing=0;" value="ZCAM LATAM HUB   /   SYSTEM ADMINISTRATOR" vertex="1">
+                    <mxGeometry height="24" width="389.1" x="55" y="23" as="geometry"/>
+                </mxCell>
+                <mxCell id="label2" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=32;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="Azure Databricks Platform  -  Target Architecture + Terraform" vertex="1">
+                    <mxGeometry height="41" width="1263.3" x="55" y="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="label3" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=15;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Hub-and-Spoke  |  One reusable Terraform module  |  Separate DEV / PROD subscriptions  |  Private data access" vertex="1">
+                    <mxGeometry height="24" width="1011.4" x="55" y="96" as="geometry"/>
+                </mxCell>
+                <mxCell id="box4" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B6C9DB;strokeWidth=1.7;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="131" width="286" x="55" y="181" as="geometry"/>
+                </mxCell>
+                <mxCell id="label5" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=18;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="DATA ENGINEERING TEAM  /  15" vertex="1">
+                    <mxGeometry height="27" width="321.4" x="76" y="192" as="geometry"/>
+                </mxCell>
+                <mxCell id="label6" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=16;fontFamily=Arial;fontColor=#233B59;fontStyle=0;spacing=0;" value="São Paulo office" vertex="1">
+                    <mxGeometry height="25" width="170.2" x="76" y="224" as="geometry"/>
+                </mxCell>
+                <mxCell id="label7" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Corporate VPN access" vertex="1">
+                    <mxGeometry height="23" width="184.8" x="76" y="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="label8" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Entra ID / conditional access" vertex="1">
+                    <mxGeometry height="23" width="261.7" x="76" y="275" as="geometry"/>
+                </mxCell>
+                <mxCell id="box9" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EEF5FC;strokeColor=#2672B8;strokeWidth=2.1;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="185" width="1030" x="375" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="label10" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=23;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="EXISTING HUB VNET" vertex="1">
+                    <mxGeometry height="32" width="252.5" x="398" y="158" as="geometry"/>
+                </mxCell>
+                <mxCell id="label11" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=15;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Shared network services  ·  CIDR to be confirmed" vertex="1">
+                    <mxGeometry height="24" width="453.2" x="693" y="166" as="geometry"/>
+                </mxCell>
+                <mxCell id="box12" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B6C9DB;strokeWidth=1.4;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="105" width="237" x="393" y="206" as="geometry"/>
+                </mxCell>
+                <mxCell id="label13" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="VPN GATEWAY" vertex="1">
+                    <mxGeometry height="26" width="128.1" x="408" y="218" as="geometry"/>
+                </mxCell>
+                <mxCell id="label14" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Existing corporate entry" vertex="1">
+                    <mxGeometry height="23" width="219" x="408" y="249" as="geometry"/>
+                </mxCell>
+                <mxCell id="label15" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="São Paulo office" vertex="1">
+                    <mxGeometry height="22" width="140.9" x="408" y="274" as="geometry"/>
+                </mxCell>
+                <mxCell id="box16" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B6C9DB;strokeWidth=1.4;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="105" width="237" x="646" y="206" as="geometry"/>
+                </mxCell>
+                <mxCell id="label17" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="AZURE FIREWALL" vertex="1">
+                    <mxGeometry height="26" width="159.2" x="661" y="218" as="geometry"/>
+                </mxCell>
+                <mxCell id="label18" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="FQDN-based HTTPS egress" vertex="1">
+                    <mxGeometry height="23" width="210.4" x="661" y="249" as="geometry"/>
+                </mxCell>
+                <mxCell id="label19" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Approved API destinations" vertex="1">
+                    <mxGeometry height="22" width="212.2" x="661" y="274" as="geometry"/>
+                </mxCell>
+                <mxCell id="box20" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B6C9DB;strokeWidth=1.4;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="105" width="237" x="899" y="206" as="geometry"/>
+                </mxCell>
+                <mxCell id="label21" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="PRIVATE DNS" vertex="1">
+                    <mxGeometry height="26" width="128.1" x="914" y="218" as="geometry"/>
+                </mxCell>
+                <mxCell id="label22" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Resolver + zone links" vertex="1">
+                    <mxGeometry height="23" width="193.3" x="914" y="249" as="geometry"/>
+                </mxCell>
+                <mxCell id="label23" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="blob / dfs / sql / kv / adb" vertex="1">
+                    <mxGeometry height="22" width="228.1" x="914" y="274" as="geometry"/>
+                </mxCell>
+                <mxCell id="box24" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B6C9DB;strokeWidth=1.4;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="105" width="237" x="1152" y="206" as="geometry"/>
+                </mxCell>
+                <mxCell id="label25" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="PRIVATE ACCESS" vertex="1">
+                    <mxGeometry height="26" width="159.2" x="1167" y="218" as="geometry"/>
+                </mxCell>
+                <mxCell id="label26" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Workspace UI / SSO" vertex="1">
+                    <mxGeometry height="23" width="167.7" x="1167" y="249" as="geometry"/>
+                </mxCell>
+                <mxCell id="label27" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Private endpoints + auth" vertex="1">
+                    <mxGeometry height="22" width="204.3" x="1167" y="274" as="geometry"/>
+                </mxCell>
+                <mxCell id="box28" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B6C9DB;strokeWidth=1.7;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="131" width="305" x="1440" y="181" as="geometry"/>
+                </mxCell>
+                <mxCell id="label29" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=18;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="EXTERNAL APIs  ×  2" vertex="1">
+                    <mxGeometry height="27" width="222.6" x="1461" y="192" as="geometry"/>
+                </mxCell>
+                <mxCell id="label30" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=16;fontFamily=Arial;fontColor=#233B59;fontStyle=0;spacing=0;" value="HTTPS 443 only" vertex="1">
+                    <mxGeometry height="25" width="150.6" x="1461" y="224" as="geometry"/>
+                </mxCell>
+                <mxCell id="label31" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="FQDN allowlisting" vertex="1">
+                    <mxGeometry height="23" width="159.2" x="1461" y="251" as="geometry"/>
+                </mxCell>
+                <mxCell id="label32" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Non-PII ingestion" vertex="1">
+                    <mxGeometry height="23" width="159.2" x="1461" y="276" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge33" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2672B8;strokeWidth=3.5;endArrow=classic;endFill=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="341" y="240" as="sourcePoint"/>
+                        <mxPoint x="375" y="240" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge34" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#B9821D;strokeWidth=3.2;endArrow=classic;endFill=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="764" y="142"/>
+                            <mxPoint x="1593" y="142"/>
+                        </Array>
+                        <mxPoint x="764" y="206" as="sourcePoint"/>
+                        <mxPoint x="1593" y="181" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="label35" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#B9821D;fontStyle=1;spacing=0;" value="Controlled API egress" vertex="1">
+                    <mxGeometry height="22" width="180.5" x="1178" y="123" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge36" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2672B8;strokeWidth=3.8;endArrow=classic;endFill=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="535" y="335" as="sourcePoint"/>
+                        <mxPoint x="535" y="393" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge37" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2672B8;strokeWidth=3.8;endArrow=classic;endFill=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1245" y="335" as="sourcePoint"/>
+                        <mxPoint x="1245" y="393" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="label38" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Hub / Spoke peering" vertex="1">
+                    <mxGeometry height="22" width="164.7" x="548" y="354" as="geometry"/>
+                </mxCell>
+                <mxCell id="label39" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Hub / Spoke peering" vertex="1">
+                    <mxGeometry height="22" width="164.7" x="1257" y="354" as="geometry"/>
+                </mxCell>
+                <mxCell id="box40" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F4FAFD;strokeColor=#318BBA;strokeWidth=2;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="520" width="830" x="55" y="395" as="geometry"/>
+                </mxCell>
+                <mxCell id="box41" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#CDE4F7;strokeColor=#CDE4F7;strokeWidth=0;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="57" width="830" x="55" y="395" as="geometry"/>
+                </mxCell>
+                <mxCell id="label42" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=21;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="PRODUCTION SUBSCRIPTION   /   Spoke VNet 10.20.0.0/16" vertex="1">
+                    <mxGeometry height="30" width="692.9" x="77" y="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="box43" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F6F7FD;strokeColor=#687BC3;strokeWidth=2;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="520" width="830" x="915" y="395" as="geometry"/>
+                </mxCell>
+                <mxCell id="box44" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F5F0FB;strokeColor=#F5F0FB;strokeWidth=0;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="57" width="830" x="915" y="395" as="geometry"/>
+                </mxCell>
+                <mxCell id="label45" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=21;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="DEVELOPMENT SUBSCRIPTION   /   Spoke VNet 10.30.0.0/16" vertex="1">
+                    <mxGeometry height="30" width="705.7" x="937" y="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="box46" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EEF5FC;strokeColor=#B6C9DB;strokeWidth=1.6;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="187" width="784" x="78" y="477" as="geometry"/>
+                </mxCell>
+                <mxCell id="label47" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=19;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="DATABRICKS PREMIUM [TF]" vertex="1">
+                    <mxGeometry height="28" width="315.3" x="102" y="488" as="geometry"/>
+                </mxCell>
+                <mxCell id="label48" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=15;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="adb-zcam-prod-brs  ·  Secure Cluster Connectivity" vertex="1">
+                    <mxGeometry height="24" width="462.3" x="449" y="492" as="geometry"/>
+                </mxCell>
+                <mxCell id="box49" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B6C9DB;strokeWidth=1.3;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="111" width="359" x="96" y="526" as="geometry"/>
+                </mxCell>
+                <mxCell id="label50" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="Host + container subnets" vertex="1">
+                    <mxGeometry height="26" width="262.9" x="111" y="537" as="geometry"/>
+                </mxCell>
+                <mxCell id="label51" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="snet-adb-host-prod / snet-adb-container-prod" vertex="1">
+                    <mxGeometry height="23" width="389.8" x="111" y="565" as="geometry"/>
+                </mxCell>
+                <mxCell id="label52" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Delegated + NSGs; no public IP" vertex="1">
+                    <mxGeometry height="23" width="270.2" x="111" y="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="box53" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B6C9DB;strokeWidth=1.3;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="111" width="373" x="470" y="526" as="geometry"/>
+                </mxCell>
+                <mxCell id="label54" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="PRIVATE LINKS  /  OUTSIDE TF" vertex="1">
+                    <mxGeometry height="26" width="335.5" x="486" y="537" as="geometry"/>
+                </mxCell>
+                <mxCell id="label55" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="ADB UI / backend · ADLS blob + dfs" vertex="1">
+                    <mxGeometry height="23" width="304.4" x="486" y="565" as="geometry"/>
+                </mxCell>
+                <mxCell id="label56" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="SQL · Key Vault · browser auth · DNS" vertex="1">
+                    <mxGeometry height="23" width="321.4" x="486" y="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="box57" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#EAF6F0;strokeColor=#83BDA7;strokeWidth=1.5;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="115" width="784" x="78" y="686" as="geometry"/>
+                </mxCell>
+                <mxCell id="label58" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=16;fontFamily=Arial;fontColor=#23906E;fontStyle=1;spacing=0;" value="DATA SERVICES   /   PUBLIC NETWORK ACCESS DISABLED" vertex="1">
+                    <mxGeometry height="25" width="502" x="98" y="697" as="geometry"/>
+                </mxCell>
+                <mxCell id="label59" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#B9821D;fontStyle=1;spacing=0;" value="API pull via Hub Firewall" vertex="1">
+                    <mxGeometry height="22" width="212.2" x="642" y="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="label60" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=18;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="stlatamraw" vertex="1">
+                    <mxGeometry height="27" width="123.8" x="98" y="730" as="geometry"/>
+                </mxCell>
+                <mxCell id="label61" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Non-PII · approved HTTPS pull" vertex="1">
+                    <mxGeometry height="23" width="261.7" x="98" y="761" as="geometry"/>
+                </mxCell>
+                <mxCell id="label62" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=18;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="stlatamcurated" vertex="1">
+                    <mxGeometry height="27" width="167.7" x="343" y="730" as="geometry"/>
+                </mxCell>
+                <mxCell id="label63" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Customer PII" vertex="1">
+                    <mxGeometry height="23" width="116.5" x="343" y="761" as="geometry"/>
+                </mxCell>
+                <mxCell id="label64" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=18;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="stlatamanalytics" vertex="1">
+                    <mxGeometry height="27" width="189.7" x="603" y="730" as="geometry"/>
+                </mxCell>
+                <mxCell id="label65" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Aggregated BI-ready" vertex="1">
+                    <mxGeometry height="23" width="176.3" x="603" y="761" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge66" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#23906E;strokeWidth=2.3;endArrow=classic;endFill=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="253" y="742" as="sourcePoint"/>
+                        <mxPoint x="323" y="742" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge67" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#23906E;strokeWidth=2.3;endArrow=classic;endFill=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="529" y="742" as="sourcePoint"/>
+                        <mxPoint x="584" y="742" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="box68" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF6E3;strokeColor=#D7B56C;strokeWidth=1.4;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="73" width="378" x="78" y="826" as="geometry"/>
+                </mxCell>
+                <mxCell id="label69" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="PRODUCTION KEY VAULT" vertex="1">
+                    <mxGeometry height="26" width="221.4" x="96" y="835" as="geometry"/>
+                </mxCell>
+                <mxCell id="label70" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Ingestion reads API secrets · rotation + PE" vertex="1">
+                    <mxGeometry height="22" width="355" x="96" y="865" as="geometry"/>
+                </mxCell>
+                <mxCell id="box71" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F5F0FB;strokeColor=#BCAADB;strokeWidth=1.4;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="73" width="390" x="472" y="826" as="geometry"/>
+                </mxCell>
+                <mxCell id="label72" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#7159AB;fontStyle=1;spacing=0;" value="UNITY CATALOG + ENTRA ID" vertex="1">
+                    <mxGeometry height="26" width="262.9" x="490" y="835" as="geometry"/>
+                </mxCell>
+                <mxCell id="label73" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Least privilege · auditing · PII grants" vertex="1">
+                    <mxGeometry height="22" width="323.3" x="490" y="865" as="geometry"/>
+                </mxCell>
+                <mxCell id="box74" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F2F5FC;strokeColor=#B6C9DB;strokeWidth=1.6;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="187" width="784" x="938" y="477" as="geometry"/>
+                </mxCell>
+                <mxCell id="label75" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=19;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="DATABRICKS PREMIUM [TF]" vertex="1">
+                    <mxGeometry height="28" width="315.3" x="959" y="488" as="geometry"/>
+                </mxCell>
+                <mxCell id="label76" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=15;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="adb-zcam-dev-brs  ·  Secure Cluster Connectivity" vertex="1">
+                    <mxGeometry height="24" width="453.2" x="1309" y="492" as="geometry"/>
+                </mxCell>
+                <mxCell id="box77" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B6C9DB;strokeWidth=1.3;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="111" width="359" x="956" y="526" as="geometry"/>
+                </mxCell>
+                <mxCell id="label78" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="Host + container subnets" vertex="1">
+                    <mxGeometry height="26" width="262.9" x="972" y="537" as="geometry"/>
+                </mxCell>
+                <mxCell id="label79" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="snet-adb-host-dev / snet-adb-container-dev" vertex="1">
+                    <mxGeometry height="23" width="372.7" x="972" y="565" as="geometry"/>
+                </mxCell>
+                <mxCell id="label80" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Delegated + NSGs; no public IP" vertex="1">
+                    <mxGeometry height="23" width="270.2" x="972" y="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="box81" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B6C9DB;strokeWidth=1.3;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="111" width="373" x="1330" y="526" as="geometry"/>
+                </mxCell>
+                <mxCell id="label82" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="PRIVATE LINKS  /  OUTSIDE TF" vertex="1">
+                    <mxGeometry height="26" width="335.5" x="1345" y="537" as="geometry"/>
+                </mxCell>
+                <mxCell id="label83" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="ADB UI / backend · ADLS blob + dfs" vertex="1">
+                    <mxGeometry height="23" width="304.4" x="1345" y="565" as="geometry"/>
+                </mxCell>
+                <mxCell id="label84" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Key Vault · browser auth · DNS" vertex="1">
+                    <mxGeometry height="23" width="270.2" x="1345" y="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="box85" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F3F5FE;strokeColor=#B5C2ED;strokeWidth=1.5;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="115" width="784" x="938" y="686" as="geometry"/>
+                </mxCell>
+                <mxCell id="label86" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=16;fontFamily=Arial;fontColor=#7159AB;fontStyle=1;spacing=0;" value="DEV DATA SERVICES   /   ISOLATED" vertex="1">
+                    <mxGeometry height="25" width="326.3" x="958" y="697" as="geometry"/>
+                </mxCell>
+                <mxCell id="label87" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=18;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="Raw  /  Curated  /  Analytics storage" vertex="1">
+                    <mxGeometry height="27" width="420.3" x="958" y="730" as="geometry"/>
+                </mxCell>
+                <mxCell id="label88" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Synthetic or irreversibly de-identified data only" vertex="1">
+                    <mxGeometry height="23" width="432.5" x="958" y="761" as="geometry"/>
+                </mxCell>
+                <mxCell id="box89" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF6E3;strokeColor=#D7B56C;strokeWidth=1.4;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="73" width="378" x="938" y="826" as="geometry"/>
+                </mxCell>
+                <mxCell id="label90" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="DEVELOPMENT KEY VAULT" vertex="1">
+                    <mxGeometry height="26" width="231.8" x="957" y="835" as="geometry"/>
+                </mxCell>
+                <mxCell id="label91" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Dev identity reads secrets · own rotation" vertex="1">
+                    <mxGeometry height="22" width="339.1" x="957" y="865" as="geometry"/>
+                </mxCell>
+                <mxCell id="box92" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F5F0FB;strokeColor=#BCAADB;strokeWidth=1.4;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="73" width="390" x="1332" y="826" as="geometry"/>
+                </mxCell>
+                <mxCell id="label93" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=16;fontFamily=Arial;fontColor=#7159AB;fontStyle=1;spacing=0;" value="DEV ENTRA GROUPS + JOB POLICY" vertex="1">
+                    <mxGeometry height="25" width="297" x="1350" y="836" as="geometry"/>
+                </mxCell>
+                <mxCell id="label94" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Auto-termination · no production PII" vertex="1">
+                    <mxGeometry height="22" width="299.5" x="1350" y="865" as="geometry"/>
+                </mxCell>
+                <mxCell id="box95" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B6C9DB;strokeWidth=1.7;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="137" width="829" x="55" y="976" as="geometry"/>
+                </mxCell>
+                <mxCell id="label96" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=20;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="EXISTING AZURE SQL DATABASE [EXTERNAL]" vertex="1">
+                    <mxGeometry height="29" width="477.6" x="79" y="988" as="geometry"/>
+                </mxCell>
+                <mxCell id="label97" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=15;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Hosted in another subscription  ·  Production Private Endpoint" vertex="1">
+                    <mxGeometry height="24" width="581.3" x="79" y="1021" as="geometry"/>
+                </mxCell>
+                <mxCell id="label98" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=15;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Entra authentication; DNS private resolution" vertex="1">
+                    <mxGeometry height="24" width="416.6" x="79" y="1048" as="geometry"/>
+                </mxCell>
+                <mxCell id="label99" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Recovery and permissions require SQL owner approval" vertex="1">
+                    <mxGeometry height="23" width="449.5" x="79" y="1076" as="geometry"/>
+                </mxCell>
+                <mxCell id="box100" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B6C9DB;strokeWidth=1.7;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="137" width="829" x="916" y="976" as="geometry"/>
+                </mxCell>
+                <mxCell id="label101" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=20;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="PRODUCTION DISASTER RECOVERY [DESIGN]" vertex="1">
+                    <mxGeometry height="29" width="465.4" x="940" y="988" as="geometry"/>
+                </mxCell>
+                <mxCell id="label102" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=15;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Secondary approved region  ·  Warm private networking foundation" vertex="1">
+                    <mxGeometry height="24" width="599.6" x="940" y="1021" as="geometry"/>
+                </mxCell>
+                <mxCell id="label103" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=15;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Data replication + redeployable workspace and jobs" vertex="1">
+                    <mxGeometry height="24" width="471.5" x="940" y="1048" as="geometry"/>
+                </mxCell>
+                <mxCell id="label104" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#A54D3D;fontStyle=1;spacing=0;" value="RPO target: 4h   |   RTO target: 2h   |   Validate with recovery drills" vertex="1">
+                    <mxGeometry height="23" width="620.3" x="940" y="1076" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge105" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#23906E;strokeWidth=3.2;endArrow=classic;endFill=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="355" y="915" as="sourcePoint"/>
+                        <mxPoint x="355" y="976" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="label106" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#23906E;fontStyle=0;spacing=0;" value="SQL over Private Link" vertex="1">
+                    <mxGeometry height="22" width="180.5" x="372" y="940" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge107" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#23906E;strokeWidth=3.2;endArrow=classic;endFill=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="761" y="943"/>
+                            <mxPoint x="1257" y="943"/>
+                        </Array>
+                        <mxPoint x="761" y="915" as="sourcePoint"/>
+                        <mxPoint x="1257" y="976" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="label108" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#23906E;fontStyle=0;spacing=0;" value="DR replication / recovery" vertex="1">
+                    <mxGeometry height="22" width="212.2" x="954" y="924" as="geometry"/>
+                </mxCell>
+                <mxCell id="box109" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#F5F0FB;strokeColor=#927AC4;strokeWidth=2;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="249" width="1690" x="55" y="1140" as="geometry"/>
+                </mxCell>
+                <mxCell id="label110" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=21;fontFamily=Arial;fontColor=#7159AB;fontStyle=1;spacing=0;" value="TERRAFORM&amp;nbsp; -&amp;nbsp; ONE REUSABLE MODULE" vertex="1">
+                    <mxGeometry height="30" width="782.6" x="77" y="1152" as="geometry"/>
+                </mxCell>
+                <mxCell id="label111" parent="1" style="text;html=1;whiteSpace=wrap;align=right;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Workspace scope only  ·  Dependencies not provisioned" vertex="1">
+                    <mxGeometry height="23" width="466.6" x="1227.4" y="1159" as="geometry"/>
+                </mxCell>
+                <mxCell id="box112" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#927AC4;strokeWidth=1.5;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="150" width="475" x="76" y="1193" as="geometry"/>
+                </mxCell>
+                <mxCell id="label113" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=18;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="PRODUCTION ROOT" vertex="1">
+                    <mxGeometry height="27" width="178.7" x="94" y="1202" as="geometry"/>
+                </mxCell>
+                <mxCell id="label114" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#7159AB;fontStyle=1;spacing=0;" value="environments/prod/main.tf" vertex="1">
+                    <mxGeometry height="26" width="273.2" x="94" y="1231" as="geometry"/>
+                </mxCell>
+                <mxCell id="label115" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#233B59;fontStyle=0;spacing=0;" value="environment = prod  |  Prod subscription" vertex="1">
+                    <mxGeometry height="23" width="355.6" x="94" y="1263" as="geometry"/>
+                </mxCell>
+                <mxCell id="label116" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Independent Terraform state (remote backend planned)" vertex="1">
+                    <mxGeometry height="22" width="426.4" x="94" y="1287" as="geometry"/>
+                </mxCell>
+                <mxCell id="label117" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Vars: subscription / RG / VNet / Access Connector" vertex="1">
+                    <mxGeometry height="22" width="402.6" x="94" y="1311" as="geometry"/>
+                </mxCell>
+                <mxCell id="box118" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#927AC4;strokeWidth=1.8;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="150" width="487" x="657" y="1193" as="geometry"/>
+                </mxCell>
+                <mxCell id="label119" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#7159AB;fontStyle=1;spacing=0;" value="SHARED CHILD MODULE  /  CREATED RESOURCE" vertex="1">
+                    <mxGeometry height="26" width="428.8" x="679" y="1203" as="geometry"/>
+                </mxCell>
+                <mxCell id="label120" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=18;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="modules/databricks/main.tf" vertex="1">
+                    <mxGeometry height="27" width="299.5" x="679" y="1230" as="geometry"/>
+                </mxCell>
+                <mxCell id="label121" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#233B59;fontStyle=0;spacing=0;" value="azurerm_databricks_workspace.this" vertex="1">
+                    <mxGeometry height="23" width="295.8" x="679" y="1263" as="geometry"/>
+                </mxCell>
+                <mxCell id="label122" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Premium · VNet injection · no_public_ip · private" vertex="1">
+                    <mxGeometry height="23" width="432.5" x="679" y="1286" as="geometry"/>
+                </mxCell>
+                <mxCell id="label123" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Existing delegated subnets + NSGs + connector required" vertex="1">
+                    <mxGeometry height="22" width="442.2" x="679" y="1311" as="geometry"/>
+                </mxCell>
+                <mxCell id="box124" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#927AC4;strokeWidth=1.5;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="150" width="473" x="1250" y="1193" as="geometry"/>
+                </mxCell>
+                <mxCell id="label125" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=18;fontFamily=Arial;fontColor=#17365D;fontStyle=1;spacing=0;" value="DEVELOPMENT ROOT" vertex="1">
+                    <mxGeometry height="27" width="189.7" x="1268" y="1202" as="geometry"/>
+                </mxCell>
+                <mxCell id="label126" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=17;fontFamily=Arial;fontColor=#7159AB;fontStyle=1;spacing=0;" value="environments/dev/main.tf" vertex="1">
+                    <mxGeometry height="26" width="262.9" x="1268" y="1231" as="geometry"/>
+                </mxCell>
+                <mxCell id="label127" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=14;fontFamily=Arial;fontColor=#233B59;fontStyle=0;spacing=0;" value="environment = dev  |  Dev subscription" vertex="1">
+                    <mxGeometry height="23" width="338.5" x="1268" y="1263" as="geometry"/>
+                </mxCell>
+                <mxCell id="label128" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Independent Terraform state (remote backend planned)" vertex="1">
+                    <mxGeometry height="22" width="426.4" x="1268" y="1287" as="geometry"/>
+                </mxCell>
+                <mxCell id="label129" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Vars: subscription / RG / VNet / Access Connector" vertex="1">
+                    <mxGeometry height="22" width="402.6" x="1268" y="1311" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge130" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7159AB;strokeWidth=3;endArrow=classic;endFill=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="553" y="1272" as="sourcePoint"/>
+                        <mxPoint x="652" y="1272" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge131" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7159AB;strokeWidth=3;endArrow=classic;endFill=1;" value="">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1246" y="1272" as="sourcePoint"/>
+                        <mxPoint x="1149" y="1272" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="label132" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=12;fontFamily=Arial;fontColor=#7159AB;fontStyle=1;spacing=0;" value="calls" vertex="1">
+                    <mxGeometry height="21" width="90" x="568" y="1248" as="geometry"/>
+                </mxCell>
+                <mxCell id="label133" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=12;fontFamily=Arial;fontColor=#7159AB;fontStyle=1;spacing=0;" value="calls" vertex="1">
+                    <mxGeometry height="21" width="90" x="1183" y="1248" as="geometry"/>
+                </mxCell>
+                <mxCell id="label134" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="OUTSIDE TERRAFORM v2: Hub / Spokes / subnets / NSGs / Private Endpoints / DNS / ADLS / SQL / Key Vault / UC grants / DR" vertex="1">
+                    <mxGeometry height="22" width="957.7" x="77" y="1358" as="geometry"/>
+                </mxCell>
+                <mxCell id="label135" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=13;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="KEY: Blue - private network  |  Green - protected data / DR  |  Gold - HTTPS egress  |  Purple - Terraform scope" vertex="1">
+                    <mxGeometry height="22" width="902.2" x="55" y="1418" as="geometry"/>
+                </mxCell>
+                <mxCell id="label136" parent="1" style="text;html=1;whiteSpace=wrap;align=right;verticalAlign=middle;fillColor=none;strokeColor=none;fontSize=12;fontFamily=Arial;fontColor=#5B718A;fontStyle=0;spacing=0;" value="Est. USD 7,567/mo &amp;lt; USD 8k  |  RPO 4h / RTO 2h: targets only  |  Not deployed" vertex="1">
+                    <mxGeometry height="21" width="577.6" x="1167.4" y="1419" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,7 @@
+# EXAMPLE VALUES ONLY — NOT deployable without real, authorized Azure resources.
+# Do not commit a real terraform.tfvars file.
+subscription_id      = "00000000-0000-0000-0000-000000000001"
+resource_group_name  = "rg-data-zcam-prod-brs"
+vnet_id              = "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/rg-network-prod/providers/Microsoft.Network/virtualNetworks/vnet-zcam-prod"
+access_connector_id  = "/subscriptions/00000000-0000-0000-0000-000000000001/resourceGroups/rg-data-zcam-prod-brs/providers/Microsoft.Databricks/accessConnectors/ac-zcam-prod"
+location             = "brazilsouth"
