@@ -7,7 +7,7 @@ This package is an **example** to help reproduce and explain the technical assig
 **Sample deliverables in English:**
 1. `architecture/Zurich_Azure_Architecture_Terraform` (also `.drawio` and `.pdf`).
 2. `document/Zurich_Technical_Design_Terraform.pdf` (5 pages).
-3. `terraform/` (one custom Terraform module, Option B, called once each for prod/dev; prerequisite Azure infrastructure is out of scope).
+3. `terraform/` (one custom Terraform module called once each for prod/dev; prerequisite Azure infrastructure is out of scope).
 
 All budgets, CIDRs, architecture assumptions, DR targets, external SQL permissions, and private network dependencies require validation in the actual tenant. The sample Terraform has **not** been run against Azure, and local provider validation may require Internet access and installed Terraform.
 
